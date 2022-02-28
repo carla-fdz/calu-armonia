@@ -29,6 +29,7 @@ header div nav ul {
     grid-template-columns: repeat(7, 1fr);
 }
 
+
 header div nav ul li {
     display: flex;
     flex-direction: row;
@@ -36,6 +37,10 @@ header div nav ul li {
     padding: 5px 20px;
     background-color: lightseagreen;
     text-align: center;
+}
+
+header div nav ul li:hover {
+    background-color: #d6dbda;
 }
 
 header nav ul li a {
@@ -47,7 +52,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: rgb(105, 105, 105);
-    background-color: transparent;
 }
 
 header span {
@@ -107,7 +111,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0 50px;
-    cursor: pointer
+    cursor: pointer;  
 }
 
 .textoGrande {
@@ -310,6 +314,12 @@ hr {
     width: 200px;
     height: 200px;
     padding-bottom: 5px;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.imgServicios:hover {
+    transform: scale(1.1);
 }
 
 .encabezadoProductos {
@@ -355,6 +365,7 @@ hr {
 .imgNosotros {
     width: 300px;
     height: 200px;
+    transform: translateY(10px);
 }
 
 .textoNosotros {
@@ -365,12 +376,11 @@ hr {
 .flexNosotros {
     display: flex;
     flex-direction: row;
-    margin: 0px 40px;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    
+    padding: 40px;
+    background-image: linear-gradient(to left, rgb(191, 194, 194), #d6dbda, whitesmoke);
 }
 
 
