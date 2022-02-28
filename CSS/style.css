@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d6dbda;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    padding: 40px 30px;
+}
+
+header {
+    background-color: whitesmoke;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    height: 200px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+header div nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+header div nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 20px;
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header span {
+    display: none;
+}
+
+h2 {
+    color: black;
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 10px;
+    color: rgba(63, 59, 59, 0.9);
+    text-align: center;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    list-style: none;   
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+.portada {
+    background-image: url(../assets/img/portada.png.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    cursor: pointer
+}
+
+.textoGrande {
+    font-size: 18px;
+}
+
+.contenedorElegidos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.flexElegidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.imgElegidos {
+    width: 250px;
+    height: 150px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.textoElegidos {
+    padding: 3px 10px;
+}
+
+.cajaSombreada {
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+.contenedorServicios {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+    place-content: center;
+    padding-top: 20px;  
+}
+
+.flexServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer
+}
+
+.pServicios {
+    padding: 20px 30px;
+}
+
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.flexProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+form {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+#text {
+    height: 40px;
+    text-align: start;
+}
+
+button[type="reset"] {
+    cursor: pointer;
+}
+
+
+button[type="submit"] {
+    cursor: pointer;
+}
+
+.divButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.button {
+    padding: 2px 10px;
+}
+
+.contenedorFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+}
+
+footer div ul li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+footer div ul li a {
+    text-decoration: none;
+}
+
+.mapa {
+    list-style: none;
+}
+
+hr {
+    background-color: whitesmoke;
+    border: 0;
+    height: 5px;
+}
+
+.encabezadoServicios {
+    background-image: url(../assets/img/fondos/fondoFloresBlancas.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    /* color:  rgba(0, 0, 0); */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.areaServicios {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.asideServicios {
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.mainServicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    place-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.divFlexServicios {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+
+.imgServicios {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 5px;
+}
+
+.encabezadoProductos {
+    background-image: url(../assets/img/productos/pexels-rachel-claire-5490778.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.areaProductos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.asideProductos {
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.mainProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    place-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.seccionContacto {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.imgNosotros {
+    width: 300px;
+    height: 200px;
+}
+
+.textoNosotros {
+    padding: 10px 30px;
+}
+
+
+.flexNosotros {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    
+}
+
+
+@media all and (max-width: 1023px) {
+    .contenedorElegidos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .flexServicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .areaServicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .asideServicios {
+        display: none;
+    }
+
+    .mainServicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        place-content: center;
+        padding: 50px 30px;
+    }
+
+    .areaProductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .asideProductos {
+        display: none;
+    }
+
+    .mainProductos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        place-content: center;
+        padding: 50px 30px;
+    }
+    
+}
+
+@media all and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header span {
+        display: flex;
+        flex-direction: row;
+        background-color: lightseagreen;
+        padding: 5px 20px;
+    }
+
+    header span a {
+        text-decoration: none;
+    }
+
+    .contenedorElegidos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contenedorServicios {
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        padding: 20px 40px;
+    }
+
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .contenedorFooter {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto);
+        row-gap: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    .flexNosotros {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 40px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        
+    }
+
+    .textoNosotros {
+        padding-bottom: 50px;
+    }
+
+    .mainServicios {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        place-content: center;
+        padding: 50px 30px;
+    }
+
+    .mainProductos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        place-content: center;
+        padding: 50px 30px;
+    }
+
+}
