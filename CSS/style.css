@@ -45,6 +45,11 @@ header nav ul li a {
     font-size: 16px;
 }
 
+header nav ul li a:hover {
+    color: rgb(105, 105, 105);
+    background-color: transparent;
+}
+
 header span {
     display: none;
 }
@@ -167,7 +172,13 @@ a {
 .img {
     width: 300px;
     height: 200px;
-    cursor: pointer
+    cursor: pointer;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.img:hover {
+    transform: scale(1.1);
 }
 
 .pServicios {
