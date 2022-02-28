@@ -130,6 +130,12 @@ a {
     height: 150px;
     border-radius: 30px;
     cursor: pointer;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.imgElegidos:hover {
+    transform: scale(1.1);
 }
 
 .textoElegidos {
@@ -447,7 +453,7 @@ hr {
         row-gap: 50px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-        padding: 20px 40px;
+        padding: 20px 0;
     }
 
     .contenedorProductos {
