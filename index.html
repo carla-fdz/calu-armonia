@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Calu armonía</title>
 </head>
+
 <body>
-    
     <div class="contenedor">
         <header>
             <div>
-                <a href="index.html">
+                <a href="./index.html">
                     <img 
                     src="assets/logo.png" 
                     alt="Logo">
@@ -28,15 +29,21 @@
                         <li><a href="">🛒</a></li>
                     </ul>
                 </nav>
-                <span> <a href="">🍔</a></span>
+                <span>
+                    <a href="">🍔</a>
+                    <a href="">🔎</a>
+                    <a href="">🛒</a>   
+                </span>
             </div>
         </header>
 
         <main class="contenido">
 
             <section class="portada">
-                <h1>Promociones</h1>
-                <p class="portadaDescripcion">Mira lo que tenemos preparado para vos</p>
+                <div  class="portada__titulo">
+                    <h1>Promociones</h1>
+                    <p>Mira lo que tenemos preparado para vos</p>
+                </div>
             </section>
 
             <section>
@@ -106,12 +113,13 @@
                 <div  class="contenedorServicios">
                     <div class="flexServicios">
                         <img 
-                        src="assets/img/serviciosCategorias/depilacion-portada.png.jpeg" 
+                        src="assets/img/fondos/mujer.jpg.jpg" 
                         alt="Depilación"
                         class="cajaSombreada img"
                         >
+                        <h4>Depilación</h4>
                         <p class="pServicios">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore unde fuga architecto corrupti delectus ipsam voluptatibus qui dignissimos sed maiores porro, dolore fugiat sint quia.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore unde fuga architecto corrupti delectus ipsam voluptatibus
                         </p>
                     </div>
 
@@ -121,8 +129,9 @@
                         alt="Masajes"
                         class="cajaSombreada img"
                         >
+                        <h4>Masajes</h4>
                         <p class="pServicios">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur? Consequuntur nostrum incidunt blanditiis quaerat consequatur est dolor molestiae!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur?
                         </p>
                     </div>
 
@@ -132,19 +141,21 @@
                         alt="Podología"
                         class="cajaSombreada img"
                         >
+                        <h4>Podología</h4>
                         <p class="pServicios">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur? Consequuntur nostrum incidunt blanditiis quaerat consequatur est dolor molestiae!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur?
                         </p>
                     </div>
 
                     <div class="flexServicios">
                         <img 
-                        src="assets/img/serviciosCategorias/pestañas.png.jpeg" 
+                        src="assets/img/serviciosCategorias/pestañas.jpg" 
                         alt="pestañas"
                         class="cajaSombreada img"
                         >
+                        <h4>Lifting y permanente de pestañas</h4>
                         <p class="pServicios">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, nemo doloremque. Voluptate, temporibus? Quos, id, nam expedita fugiat blanditiis beatae accusamus vel hic quia distinctio itaque voluptatibus a minima nobis.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, nemo doloremque. Voluptate, temporibus? 
                         </p>
                     </div>
                 </div>
@@ -162,8 +173,7 @@
                         alt="skincare"
                         class="cajaSombreada img"
                         >
-                        <h4>Skincare
-                        </h4>
+                        <h4>Skincare</h4>
                     </div>
 
                     <div class="flexProductos">
@@ -172,8 +182,7 @@
                         alt="corporales"
                         class="cajaSombreada img"
                         >
-                        <h4>Corporales
-                        </h4>
+                        <h4>Corporales</h4>
                     </div>
 
                     <div class="flexProductos">
@@ -182,8 +191,7 @@
                         alt="hogar"
                         class="cajaSombreada img"
                         >
-                        <h4>Hogar
-                        </h4>
+                        <h4>Hogar</h4>
                     </div>
                 </div>
             </section>
@@ -249,14 +257,12 @@
                 </div>
 
                 <div>
-                   
-    
                     <ul>
                         <li><h5>Contacto</h5></li>
-                        <li>Whatsapp</li>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>Gmail</li>
+                        <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a> Whatsapp</li>
+                        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a> Instagram</li>
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> Facebook</li>
+                        <li><a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a> Pinterest</li>
                     </ul>
                 </div>
 
@@ -272,14 +278,13 @@
 
                 <div></div>
                 
-                <div>
-                    <p class="copyright">Copyright</p>    
+                <div class="copyright">
+                    <span><a href=""><i class="fas fa-copyright"></i></a> Copyright</span>
                 </div>
 
-
-                
             </div>
         </footer>
+
     </div>
 </body>
 
