@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass style.scss style.css -w --no-source-map -s compressed"
+    "div": "sass style.scss CSS/style.css -w --no-source-map -s compressed"
   },
-  "author": "",
+  "author": "Carla Fernandez",
   "license": "ISC"
 }

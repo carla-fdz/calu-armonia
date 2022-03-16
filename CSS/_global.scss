@@ -4,34 +4,13 @@
 }
 
 body {
+    width: 100%;
     background-color: #d6dbda;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     section {
-        padding: 40px 30px;
-    }
-    
-    h2 {
-        color: black;
-        margin: 10px;
-        text-align: center;
-    }
-    
-    h3 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-    
-    h4 {
-        margin-top: 10px;
-        color: rgba(63, 59, 59, 0.9);
-        text-align: center;
-    }
-    
-    h5 {
-        font-size: 16px;
+        padding: 2rem 0;
     }
     
     p {
@@ -53,9 +32,9 @@ header {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 
     img {
-        height: 200px;
+        height: 15rem;
         cursor: pointer;
-        padding-left: 30px;
+        padding-left: 1rem;
     }
 
     ul {
@@ -104,15 +83,15 @@ hr {
 }
 
 footer {
+    padding: 2rem 1.25rem;
+
     .contenedorFooter {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
-        padding: 20px;
     }
 
     li {
-        padding-left: 20px;
         list-style: none;
     }
 
@@ -131,3 +110,52 @@ footer {
     
 }
 
+$headings: (
+    h1: 2rem,
+    h2: 1.5rem,
+    h3: 1.2rem,
+    h4: 1rem,
+    h5: 1rem,
+);
+
+$h1: map-get($headings, h1);
+
+h1 {
+    font-size: $h1;
+}
+
+$h2: map-get($headings, h2);
+
+h2 {
+    font-size: $h2;
+    text-align: center;
+    margin: 1rem;
+    color: rgb(58, 57, 57);
+}
+
+$h3: map-get($headings, h3);
+
+h3 {
+    font-size: $h3;
+    text-align: center;
+    margin: 1rem;
+    color: rgb(58, 57, 57);
+}
+
+$h4: map-get($headings, h4);
+
+h4 {
+    font-size: $h4;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: rgba(75, 71, 71, 0.8);
+}
+
+$h5: map-get($headings, h5);
+
+h5 {
+    font-size: $h5;
+    text-align: center;
+    margin: 0.5rem 0;
+}

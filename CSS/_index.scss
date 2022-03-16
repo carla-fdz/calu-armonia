@@ -1,0 +1,140 @@
+main {
+    .portada {
+        background-image: url(../assets/img/portada.png.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 20rem;
+        width: auto;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        cursor: pointer; 
+        
+        &__titulo {
+            text-align: center;
+            transition: transform 1s;
+    
+            &:hover {
+                transform: scale(1.1);
+                text-shadow: 1px 1px 2px wheat;
+            }
+        }
+    }
+
+    .importantParagraph {
+        font-size: 18px;
+        padding: 0 2rem;
+    }
+
+    .contenedorElegidos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+
+        .flexElegidos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            padding: 30px 10px;
+        }
+        
+        .imgElegidos {
+            width: 16rem;
+            height: 9.4rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: transform 0.5s;
+            overflow: hidden;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .textoElegidos {
+            padding: $paddingParagraph;
+        }
+    }
+
+    .contenedorServicios {
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1rem;
+        place-content: center;
+        padding-top: 1.25rem;  
+
+        .flexServicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pServicios {
+            padding: 1rem 2rem;
+        }
+    }
+
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+
+        .flexProductos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            padding: 1.25rem 0;
+        }
+    }
+
+    form {
+        width: 40%;
+        margin: 0 auto;
+
+        input {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-top: 5px;
+        }
+
+        #text {
+            height: 60px;
+            text-align: start;
+        }
+
+        .divButton {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .button {
+            height: 40px;
+            width: 100px;
+            cursor: pointer;
+            transition-duration: 0.5s;
+
+            &:hover {
+                border: none;
+                background-color: lightseagreen;
+                color: white;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+            }
+          }
+    }
+}
+

@@ -1,0 +1,20 @@
+
+.gradient {
+    background-image: $gradient;
+}
+
+.flexNosotros {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 3rem;
+
+    .imgNosotros {
+        width: 18rem;
+        height: 12rem;
+        transform: translateY(10px);
+    }
+}
