@@ -13,7 +13,6 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 50px;
         cursor: pointer; 
         
         &__titulo {
@@ -22,82 +21,37 @@ main {
     
             &:hover {
                 transform: scale(1.1);
-                text-shadow: 1px 1px 2px wheat;
+                text-shadow: 1px 1px 2px rgb(236, 234, 209);
             }
         }
     }
 
    .importantParagraph {
             font-size: 18px;
-            padding: 0 2rem;
+            margin: 2rem;
     }
 
-    .contenedorElegidos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        justify-content: center;
+    .imgElegidos {
+        border-radius: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.5s;
+        overflow: hidden;
 
-        .flexElegidos {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            padding: 30px 10px;
-        }
-        
-        .imgElegidos {
-            width: 16rem;
-            height: 9.4rem;
-            border-radius: 2rem;
-            cursor: pointer;
-            transition: transform 0.5s;
-            overflow: hidden;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        .textoElegidos {
-            padding: $paddingParagraph;
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
-    .contenedorServicios {
+
+    .textoElegidos {
+        padding: $paddingParagraph;
+    }
+
+    .sectionServicios {
         max-width: 80%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 1rem;
-        place-content: center;
-        padding-top: 1.25rem;  
-
-        .flexServicios {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
 
         .pServicios {
-            padding: 1rem 2rem;
-        }
-    }
-
-    .contenedorProductos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-
-        .flexProductos {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            padding: 1.25rem 0;
+        padding: 0 3rem 1rem 3rem;           
         }
     }
 
@@ -125,16 +79,34 @@ main {
         .button {
             height: 40px;
             width: 100px;
+            border-radius: 0.3rem;
+            border: none;
+            background-color: lightseagreen;
+            color: white;
             cursor: pointer;
-            transition-duration: 0.5s;
+            transition-duration: 1s;
 
             &:hover {
-                border: none;
-                background-color: lightseagreen;
-                color: white;
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
             }
           }
     }
-}
 
+    .cajaSombreada {
+        box-shadow: $boxShadow;
+    }
+    
+    .img {
+        cursor: pointer;
+        transition: transform 0.5s;
+        overflow: hidden;
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .borderBottom {
+        border-bottom: $borderBottom;
+    }
+}

@@ -4,292 +4,284 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Cuidado y belleza corporal para todas las edades, enterese de nuestras promociones. Ofrecemos servicio a domicilio.">
-
-
+    <link rel="stylesheet" href="./css.bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Calu armonía, cuidado corporal</title>
 </head>
 
 <body>
-    <div>
-        <header>
-            <div>
-                <a href="./index.html">
-                    <img 
-                    src="assets/logo.png" 
-                    alt="Logo">
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="pages/servicios.html">Servicios</a></li>
-                        <li> <a href="pages/productos.html">Productos</a></li>
-                        <li><a href="pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                        <li><a href="">🔎</a></li>
-                        <li><a href="">🛒</a></li>
-                    </ul>
-                </nav>
-                <span>
-                    <a href="">🍔</a>
-                </span>
+    <header>
+        <div>
+            <a class="navbar-brand" href="./index.html"><img src="assets/logo.png" alt="Logo"></a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0">
+                <div class="container-fluid div">
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a href="index.html">Inicio</a></li>
+                          <li class="nav-item"><a href="pages/servicios.html">Servicios</a></li>
+                          <li class="nav-item"><a href="pages/productos.html">Productos</a></li>
+                          <li class="nav-item"><a href="pages/nosotros.html">Nosotros</a></li>
+                          <li class="nav-item"><a href="pages/contacto.html">Contacto</a></li>
+                          <li class="nav-item"><a href="">🛒</a></li>
+                          <li>
+                              <form class="d-flex">
+                                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                  <button class="btn btn-outline-success" type="submit">🔍</button>
+                              </form>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="portada">
+            <div class="portada__titulo">
+                <h1 class="display-6"><strong>Promociones</strong></h1>
+                <p class="lead">Mira lo que tenemos preparado para vos</p>
             </div>
-        </header>
+        </section>
 
-        <main class="contenido">
+        <section>
+            <h2>Qué ofrecemos</h2>
+            <p class="importantParagraph">
+            <em>
+            Con más de 10 años de experiencia nos dedicamos a mantener y mejorar el cuidado y belleza corporal, ofreciendo servicios de excelencia con productos de calidad en la comodidad de tu hogar. Consideramos importante la calidad en el trato y respeto hacia nuestros clientes de todas las edades, con gran vocación de servicio.
+            </em>
+            </p>
+        </section>
 
-            <section class="portada">
-                <div  class="portada__titulo">
-                    <h1>Promociones</h1>
-                    <p>Mira lo que tenemos preparado para vos</p>
+        <section class="container-fluid mx-auto">
+            <div  class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center mb-4 ">
+                    <h2>Los más elegidos</h2>
                 </div>
-            </section>
-
-            <section>
-                <h2>Qué ofrecemos</h2>
-                <p class="importantParagraph"> 
-                <em>
-                Con más de 10 años de experiencia nos dedicamos a mantener y mejorar el cuidado y belleza corporal, ofreciendo servicios de excelencia con productos de calidad en la comodidad de tu hogar. Consideramos importante la calidad en el trato y respeto hacia nuestros clientes de todas las edades, con gran vocación de servicio.
-                </em>
-                </p>
-            </section>
-
-            <section>
-                <h2>Los más elegidos</h2>
-                <div class="contenedorElegidos">
-
-                    <div class="flexElegidos" > 
-                        <img 
-                        src="assets/img/serviciosInicio/regaloDorado.png" 
-                        alt="Gift card"
-                        class="imgElegidos cajaSombreada"
-                        >
-                        <h4>Gift card</h4>
-                        <p class="textoElegidos">
-                        ¿Querés hacer un regalo diferente? Regalá un momento especial de cuidado y relajación
-                        </p>
-                    </div>
-
-                    <div class="flexElegidos" > 
-                        <img 
-                        src="assets/img/serviciosInicio/masaje-espalda.png.jpeg"
-                        alt="Masaje descontracturante"
-                        class="imgElegidos cajaSombreada"
-                        >
-                        <h4>Masaje descontracturante</h4>
-                        <p class="textoElegidos">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro!
-                        </p>
-                    </div>
-
-                    <div class="flexElegidos" > 
-                        <img 
-                        src="assets/img/serviciosInicio/piernas.png.jpeg"
-                        alt="Depilación completa"
-                        class="imgElegidos cajaSombreada"
-                        >
-                        <h4>Depilación completa</h4>
-                        <p class="textoElegidos">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro!
-                        </p>
-                    </div>
-
-                    <div class="flexElegidos" > 
-                        <img 
-                        src="assets/img/serviciosInicio/podología.png.jpeg" 
-                        alt="Podología"
-                        class="imgElegidos cajaSombreada"
-                        >
-                        <h4>Podología</h4>
-                        <p class="textoElegidos">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro!
-                        </p>
-                    </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center">
+                    <img
+                    src="assets/img/serviciosInicio/regaloDorado.png"
+                    alt="Gift card"
+                    class="imgElegidos cajaSombreada"
+                    width="230px"
+                    height="150px">
+                    <h4>Gift card</h4>
+                    <p class="textoElegidos">
+                    ¿Querés hacer un regalo diferente? Regalá un momento especial de cuidado y relajación
+                    </p>
                 </div>
-            </section>
-
-            <section>
-                <h2>Servicios</h2>
-
-                <div  class="contenedorServicios">
-                    <div class="flexServicios">
-                        <img 
-                        src="assets/img/fondos/mujer.jpg.jpg" 
-                        alt="Depilación"
-                        class="cajaSombreada img"
-                        >
-                        <h4>Depilación</h4>
-                        <p class="pServicios">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore unde fuga architecto corrupti delectus ipsam voluptatibus
-                        </p>
-                    </div>
-
-                    <div class="flexServicios">
-                        <img 
-                        src="assets/img/serviciosCategorias/masaje-portada1.jpg" 
-                        alt="Masajes"
-                        class="cajaSombreada img"
-                        >
-                        <h4>Masajes</h4>
-                        <p class="pServicios">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur?
-                        </p>
-                    </div>
-
-                    <div class="flexServicios">
-                        <img 
-                        src="assets/img/serviciosInicio/podología.png.jpeg" 
-                        alt="Podología"
-                        class="cajaSombreada img"
-                        >
-                        <h4>Podología</h4>
-                        <p class="pServicios">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur?
-                        </p>
-                    </div>
-
-                    <div class="flexServicios">
-                        <img 
-                        src="assets/img/serviciosCategorias/pestañas.jpg" 
-                        alt="pestañas"
-                        class="cajaSombreada img"
-                        >
-                        <h4>Lifting y permanente de pestañas</h4>
-                        <p class="pServicios">
-                        Dale el marco perfecto a tus ojos. Lucí una mirada profunda e impactante. 
-                        </p>
-                    </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center" >
+                    <img
+                    src="assets/img/serviciosInicio/masaje-espalda.png.jpeg"
+                    alt="Masaje descontracturante"
+                    class="imgElegidos cajaSombreada"
+                    width="230px"
+                    height="150px">
+                    <h4>Masaje descontracturante</h4>
+                    <p class="textoElegidos">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro!
+                    </p>
                 </div>
-            </section>
-
-            <section>
-                <h2>Productos</h2>
-                <h3>Categorías</h3>
-                
-                <div class="contenedorProductos">
-
-                    <div class="flexProductos">
-                        <img 
-                        src="assets/img/productos/chica-skincare.png.jpeg" 
-                        alt="skincare"
-                        class="cajaSombreada img"
-                        >
-                        <h4>Skincare</h4>
-                    </div>
-
-                    <div class="flexProductos">
-                        <img 
-                        src="assets/img/productos/chica-corpo.png.jpeg" 
-                        alt="corporales"
-                        class="cajaSombreada img"
-                        >
-                        <h4>Corporales</h4>
-                    </div>
-
-                    <div class="flexProductos">
-                        <img 
-                        src="assets/img/productos/velas-soja.png.jpeg" 
-                        alt="hogar"
-                        class="cajaSombreada img"
-                        >
-                        <h4>Hogar</h4>
-                    </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center" >
+                    <img
+                    src="assets/img/serviciosInicio/piernas.png.jpeg"
+                    alt="Depilación completa"
+                    class="imgElegidos cajaSombreada"
+                    width="230px"
+                    height="150px">
+                    <h4>Depilación completa</h4>
+                    <p class="textoElegidos">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro!
+                    </p>
                 </div>
-            </section>
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center" >
+                    <img
+                    src="assets/img/serviciosInicio/podología.png.jpeg"
+                    alt="Podología"
+                    class="imgElegidos cajaSombreada"
+                    width="230px"
+                    height="150px">
+                    <h4>Podología</h4>
+                    <p class="textoElegidos">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro!
+                    </p>
+                </div>
+            </div>
+        </section>
 
-            <section>
+        <section class="container mx-auto text-center sectionServicios">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h2>Servicios</h2>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img
+                    src="assets/img/fondos/mujer.jpg.jpg"
+                    alt="Depilación"
+                    class="cajaSombreada img"
+                    width="300px"
+                    height="200px">
+                    <h4>Depilación</h4>
+                    <p class="pServicios">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore unde fuga architecto corrupti delectus ipsam voluptatibus
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img
+                    src="assets/img/serviciosCategorias/masaje-portada1.jpg"
+                    alt="Masajes"
+                    class="cajaSombreada img"
+                    width="300px"
+                    height="200px">
+                    <h4>Masajes</h4>
+                    <p class="pServicios">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur?
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img
+                    src="assets/img/serviciosInicio/podología.png.jpeg"
+                    alt="Podología"
+                    class="cajaSombreada img"
+                    width="300px"
+                    height="200px">
+                    <h4>Podología</h4>
+                    <p class="pServicios">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cum illo eligendi eaque, laboriosam expedita aspernatur?
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img
+                    src="assets/img/serviciosCategorias/pestañas.jpg"
+                    alt="pestañas"
+                    class="cajaSombreada img"
+                    width="300px"
+                    height="200px">
+                    <h4>Lifting y permanente de pestañas</h4>
+                    <p class="pServicios">
+                    Dale el marco perfecto a tus ojos. Lucí una mirada profunda e impactante.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div  class="row text-center">
+                <div  class="col-sm-12 col-md-12 col-lg-12">
+                    <h2>Productos</h2>
+                    <h3>Categorías</h3>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                    <img
+                    src="assets/img/productos/chica-skincare.png.jpeg"
+                    alt="skincare"
+                    class="cajaSombreada img"
+                    width="300px"
+                    height="200px">
+                    <h4>Skincare</h4>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                    <img
+                    src="assets/img/productos/chica-corpo.png.jpeg"
+                    alt="corporales"
+                    class="cajaSombreada img"
+                    width="300px"
+                    height="200px">
+                    <h4>Corporales</h4>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                    <img
+                    src="assets/img/productos/velas-soja.png.jpeg"
+                    alt="hogar"
+                    class="cajaSombreada img"
+                    width="300px"
+                    height="200px">
+                    <h4>Hogar</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="borderBottom">
+            <div class="mb-5">
+                <h2>Envianos tu consulta</h2>
                 <form action="" method="post" enctype="">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="nombre" class="form-control" placeholder="Maria Perez">
+                        <!-- Id y for deben tener el mismo nombre-->
+                        <!-- el atributo name se debe relacionar con el dato que voy a recibir-->
+                    </div>
 
-                    <h2>Envianos tu consulta</h2>
-    
                     <div>
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="nombre" placeholder="Maria Perez">
-                    <!-- Id y for deben tener el mismo nombre-->
-                    <!-- el atributo name se debe relacionar con el dato que voy a recibir-->
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="email" name="email"  class="form-control" placeholder="mariaperez@gmail.com">
                     </div>
-    
+
                     <div>
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="mariaperez@dominio.com">
+                        <label for="number">Teléfono/celular</label>
+                        <input type="number"  id="number" name="telefono" class="form-control">
                     </div>
-    
+
                     <div>
-                        <label for="number">Teléfono/celular:</label>
-                        <input type="number"  id="number" name="telefono">
+                        <label for="text">Consulta</label>
+                        <input type="text" id="text" name="consulta" class="form-control" placeholder="Hola, que día y horario puedo realizarme este tratamiento">
                     </div>
-    
-                    <div>
-                        <label for="text">Consulta:</label>
-                        <input type="text" id="text" name="consulta" placeholder="Quisiera saber que dia y horario puedo realizarme este tratamiento">
-                    </div>
-    
+
                     <div class="divButton">
-                        <button 
-                        type="reset"
-                        class="button"
-                        >
-                        Borrar</button>
-
-                        <button 
-                        type="submit"
-                        class="button"
-                        >
-                        Enviar</button>
-                    </div>   
+                        <button type="reset" class="button mt-2">Borrar</button>
+                        <button type="submit" class="button mt-2">Enviar</button>
+                    </div>
                 </form>
-            </section>
-
-            <hr>
-
-        </main>
-
-        <footer>
-            <div class="contenedorFooter">
-                <div>
-                    <ul>
-                        <li><strong>Menú</strong></li>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="pages/servicios.html">Servicios</a></li>
-                        <li><a href="pages/productos.html">Productos</a></li>
-                        <li><a href="pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <li><strong>Redes sociales</strong></li>
-                        <li><a href="#"><i class="fab fa-whatsapp"></i></a> Whatsapp</li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a> Instagram</li>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a> Facebook</li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a> Pinterest</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <li class="mapa">
-                        <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375406.621236996!2d-65.30409419590791!3d-42.6854182560496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe02355e87a2ead1%3A0x1e890d2810b44382!2sPuerto%20Madryn%2C%20Chubut!5e0!3m2!1ses!2sar!4v1643568991323!5m2!1ses!2sar" 
-                        frameborder="0"
-                        >
-                        Ubicación</iframe>
-                    </li>
-                </div>
-
-                <div></div>
-                
-                <div class="copyright">
-                    <span><a href=""><i class="fas fa-copyright"></i></a> Copyright</span>
-                </div>
-
             </div>
-        </footer>
+        </section>
+    </main>
 
-    </div>
+    <footer class="container">
+        <div class="row mt-4 text-center">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <ul class="list-unstyled">
+                    <li><strong>Menú</strong></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/servicios.html">Servicios</a></li>
+                    <li><a href="pages/productos.html">Productos</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <ul class="list-unstyled">
+                    <li><strong>Redes sociales</strong></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a> Whatsapp</li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a> Instagram</li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a> Facebook</li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a> Pinterest</li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <ul class="list-unstyled">
+                    <li class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375406.621236996!2d-65.30409419590791!3d-42.6854182560496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe02355e87a2ead1%3A0x1e890d2810b44382!2sPuerto%20Madryn%2C%20Chubut!5e0!3m2!1ses!2sar!4v1643568991323!5m2!1ses!2sar" frameborder="0">#</iframe>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <span><a href=""><i class="fas fa-copyright"></i></a> Copyright</span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

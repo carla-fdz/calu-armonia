@@ -6,11 +6,13 @@
 body {
     width: 100%;
     background-color: #d6dbda;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     section {
         padding: 2rem 0;
+
+        .container {
+            padding: 2rem 0;
+        }
     }
     
     p {
@@ -18,7 +20,8 @@ body {
     }
     
     ul {
-        list-style: none;   
+        list-style: none;
+        padding-left: 0;   
     }
     
     a {
@@ -35,83 +38,71 @@ header {
         height: 15rem;
         cursor: pointer;
         padding-left: 1rem;
+        margin-bottom: 0.5rem;
     }
 
-    ul {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-    }
 
-    li {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 5px 20px;
-        background-color: lightseagreen;
-        text-align: center;
+    nav {
+        .div {
+            padding: 0;
+            background-color: lightseagreen;
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr;
+                li {
+                    background-color: lightseagreen;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+        
+                    // &:hover {
+                    //     background-color: #d6dbda;
+                    //     transition: 0.3s all ease;
+                    // }
+        
+                    &:nth-child(6){
+                        justify-content: end;
+                        padding-right: 1rem;
+                    }
 
-        &:hover {
-            background-color: #d6dbda;
+                    &:nth-child(7){
+                        padding-right: 1rem;
+                    }
+                
+                    a {
+                        text-decoration: none;
+                        color: whitesmoke;
+                        font-weight: 500;
+                        font-size: 16px;
+                        transition: 0.3s all ease;
+    
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+
+                    .d-flex {
+                        .btn {
+                            border: none;
+                            background-color: lightseagreen;
+                        } 
+                    }
+                }
+            }
         }
     }
-
-    li:nth-child(6){
-        justify-content: end;
-    }
-
-    a {
-        text-decoration: none;
-        color: whitesmoke;
-        font-weight: 500;
-        font-size: 16px;
-        transition: 0.3s all ease;
-
-        &:hover {
-            color: #333;
-        }
-    }
-
-    span {
-        display: none;
-    }
-}
-
-hr {
-    background-color: whitesmoke;
-    border: 0;
-    height: 5px;
 }
 
 footer {
-    padding: 2rem 1.25rem;
-
-    .contenedorFooter {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-    }
-
-    li {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .copyright {
-        text-align: center;
-    }
-
+    padding: 1rem 0 1rem 0;
     i{
         color: #333;
     }
-    
 }
 
 $headings: (
-    h1: 2rem,
+    h1: 2.5rem,
     h2: 1.5rem,
     h3: 1.2rem,
     h4: 1rem,
@@ -122,6 +113,7 @@ $h1: map-get($headings, h1);
 
 h1 {
     font-size: $h1;
+    text-transform: uppercase;
 }
 
 $h2: map-get($headings, h2);

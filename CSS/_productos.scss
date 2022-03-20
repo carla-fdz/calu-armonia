@@ -12,37 +12,15 @@
     padding: 0 50px;
 }
 
-.areaProductos {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
 
-    .asideProductos {
-        padding-left: 30px;
-        padding-top: 50px;
-    }
-    
-    .mainProductos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        gap: 30px;
-        place-content: center;
-        align-items: center;
-        padding: 50px 30px;
-        text-align: center;
-    }
-
-    .imgServicios {
-        width: 200px;
-        height: 200px;
-        padding-bottom: 5px;
-        transition: transform 0.5s;
-        overflow: hidden;
-        cursor: pointer;
-
-        &:hover {
-            transform: scale(1.1);
-        }
+.imgServicios {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 5px;
+    transition: transform 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
     }
 }
