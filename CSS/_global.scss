@@ -72,8 +72,14 @@ header {
     .nav {
         padding: 0;
     }
-    .navbar-light .navbar-toggler-icon {
-        background-image: url(../assets/588a64e0d06f6719692a2d10.png)
+    .navbar-light {
+        .navbar-toggler-icon {
+            background-image: url(../assets/588a64e0d06f6719692a2d10.png)
+        }
+        .navbar-toggler {
+            color: transparent;
+            border-color: transparent;
+        }
     }
 }
 
