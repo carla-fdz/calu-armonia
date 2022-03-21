@@ -26,7 +26,6 @@ body {
     
     a {
         text-decoration: none;
-        color: black;
     }
 }
 
@@ -44,32 +43,28 @@ header {
 
     nav {
         .div {
-            padding: 0;
             background-color: lightseagreen;
             ul {
                 display: grid;
-                grid-template-columns: repeat(7, 1fr);
+                grid-template-columns: repeat(6, 1fr);
+                justify-content: center;
+                align-content: center;
+                width: 100%;
                 li {
                     background-color: lightseagreen;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
-        
+                    padding: 5px;
                     // &:hover {
                     //     background-color: #d6dbda;
                     //     transition: 0.3s all ease;
                     // }
-        
                     &:nth-child(6){
                         justify-content: end;
                         padding-right: 1rem;
-                    }
-
-                    &:nth-child(7){
-                        padding-right: 1rem;
-                    }
-                
+                    }                
                     a {
                         text-decoration: none;
                         color: whitesmoke;
@@ -81,13 +76,13 @@ header {
                             color: #333;
                         }
                     }
-
-                    .d-flex {
-                        .btn {
-                            border: none;
-                            background-color: lightseagreen;
-                        } 
-                    }
+    
+                    // .d-flex {
+                    //     .btn {
+                    //         border: none;
+                    //         background-color: lightseagreen;
+                    //     } 
+                    // }
                 }
             }
         }
@@ -96,8 +91,23 @@ header {
 
 footer {
     padding: 1rem 0 1rem 0;
-    i{
-        color: #333;
+    background-color: #333;
+    color: white;
+    div {
+        ul {
+            li {
+                iframe {
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        }
+    } 
+    a {
+        color: white;
+        i{
+            color: white;
+        }
     }
 }
 

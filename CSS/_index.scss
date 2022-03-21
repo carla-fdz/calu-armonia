@@ -27,9 +27,15 @@ main {
     }
 
    .importantParagraph {
-            font-size: 18px;
-            margin: 2rem;
-    }
+       width: 70%;
+       height: auto;
+       margin: 0 auto;
+       border-bottom: 2px solid grey;
+       &__text {
+        font-size: 18px;
+        padding-top: 1rem;
+       }
+   }
 
     .imgElegidos {
         border-radius: 1.5rem;
@@ -104,9 +110,5 @@ main {
         &:hover {
             transform: scale(1.1);
         }
-    }
-
-    .borderBottom {
-        border-bottom: $borderBottom;
     }
 }
