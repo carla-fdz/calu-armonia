@@ -6,8 +6,7 @@
             padding-left: 0;
             margin-bottom: 0.5rem;
         }
-    }
-    
+    }  
     main {
         .sectionServicios {
             .pServicios {
@@ -15,13 +14,34 @@
             }
         }
     }
-
-    aside {
-        display: none;
-    }
 }
 
 @media all and (max-width: 768px) {
+    header {
+        div {
+            label {
+                display: block;
+            }
+        }
+        nav {
+            position: absolute;
+            width: 60%;
+            // margin-left: -60%;
+            transition: all 1s;
+            ul {
+                flex-direction: column;
+                li{ 
+                    border-top: 1px solid whitesmoke;
+                }
+            }
+        }
+        div {
+            #btn-menu:checked ~ nav {
+                margin: 0;
+            }
+        }
+    }
+
     main {
         .sectionServicios {
             max-width: 100%;
