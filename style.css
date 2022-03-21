@@ -467,6 +467,7 @@ main .img:hover {
   header nav {
     position: absolute;
     width: 60%;
+    margin-left: -60%;
     -webkit-transition: all 1s;
     transition: all 1s;
   }
