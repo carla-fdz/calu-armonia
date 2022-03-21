@@ -17,30 +17,6 @@
 }
 
 @media all and (max-width: 768px) {
-    header {
-        div {
-            label {
-                display: block;
-            }
-        }
-        nav {
-            position: absolute;
-            width: 60%;
-            margin-left: -60%;
-            transition: all 1s;
-            ul {
-                flex-direction: column;
-                li{ 
-                    border-top: 1px solid whitesmoke;
-                }
-            }
-        }
-        div {
-            #btn-menu:checked ~ nav {
-                margin: 0;
-            }
-        }
-    }
     main {
         .sectionServicios {
             max-width: 100%;
@@ -53,13 +29,6 @@
     }
     footer {
         padding: 2rem 0;
-    }
-    .flexNosotros {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
     }
 }
 
