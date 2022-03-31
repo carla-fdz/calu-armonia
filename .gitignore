@@ -1,3 +1,4 @@
 #Ignora el archivo .json
-package.json
+.package.json
+
 
