@@ -1,4 +1,4 @@
 #Ignora el archivo .json
-.package.json
+**/*.json
 
 
