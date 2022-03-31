@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "div": "sass style.scss CSS/style.css -w --no-source-map -s compressed"
+    "div": "sass style.scss style.css -w --no-source-map -s compressed"
   },
   "author": "Carla Fernandez",
   "license": "ISC"
